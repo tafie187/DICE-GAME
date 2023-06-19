@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dice Game</title>
+    <link rel="icon" href="https://play-lh.googleusercontent.com/T0vNMZsI74crAegfWvvQH0SyTcAUULdmz1S--dUa6KX97ODOEviy_AeidW5rlQDFZKA">
+    <!-- Link the external CSS file -->
+    <link rel="stylesheet" href="style.css"> 
+
+</head>
+
+<body>
+	<div class="container">
+        <!-- Display the heading "Let's Play" -->
+		<h1>Let's Play</h1> 
+
+		<div class="dice">
+            <!-- Display the default name for Player 1 -->
+			<p class="Player1">Player 1</p> 
+			<!-- Display the default dice image for Player 1 -->
+            <img class="img1" src="dice6.png"> 
+		</div>
+
+		<div class="dice">
+            <!-- Display the default name for Player 2 -->
+			<p class="Player2">Player 2</p>
+            <!-- Display the default dice image for Player 2 -->
+			<img class="img2" src="dice6.png"> 
+		</div>
+	</div>
+
+	<div class="container bottom">
+        <!-- Call the rollTheDice() function when the button is clicked -->
+		<button type="button" class="butn" onClick="rollTheDice()"> 
+			Roll the Dice
+		</button>
+	</div>
+	<div class="container bottom">
+        <!-- Call the editNames() function when the button is clicked -->
+		<button type="button" class="butn" onClick="editNames()"> 
+			Edit Names
+		</button>
+	</div>
+
+    <!-- Link the external JavaScript file -->
+    <script src="main.js"></script> 
+
+</body>
+
+</html>
