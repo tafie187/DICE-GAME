@@ -1,7 +1,9 @@
 .container {
+    background:linear-gradient(to left,#270b0b, #1e242f);
     width: 70%; /* Set the width of the container to 70% of its parent element */
     margin: auto; /* Center the container horizontally */
     text-align: center; /* Center the content inside the container */
+    align-content: safe;
 }
 
 .dice {
@@ -11,23 +13,26 @@
 }
 
 body {
-    background-color: #042f4b; /* Set the background color of the body to #042f4b */
+    background-image: url("d16.jpg");
+    background-size: cover; 
+    /*background:linear-gradient(to left,#eea47f, #29549d);*/
+    /*background-color: #9a1b1b*/ ; /* Set the background color of the body to #042f4b */
     margin: 0; /* Remove the default margin of the body */
 }
 
 h1 {
     margin: 30px; /* Add a 30px margin around the heading element */
-    font-family: "Lobster", cursive; /* Set the font family of the heading element to "Lobster" */
+    font-family:lobster ; /* Set the font family of the heading element to "Lobster" */
     text-shadow: 5px 0 #232931; /* Add a text shadow to the heading element */
     font-size: 4.5rem; /* Set the font size of the heading element to 4.5rem */
-    color: #4ecca3; /* Set the text color of the heading element to #4ecca3 */
+    color:#fcf6f6; /* Set the text color of the heading element to #4ecca3 */
     text-align: center; /* Center the text inside the heading element */
 }
 
 p {
     font-size: 2rem; /* Set the font size of paragraphs to 2rem */
-    color: #4ecca3; /* Set the text color of paragraphs to #4ecca3 */
-    font-family: "Indie Flower", cursive; /* Set the font family of paragraphs to "Indie Flower" */
+    color: #cbd28f; /* Set the text color of paragraphs to #4ecca3 */
+    font-family:Bradley hand,cursive; /* Set the font family of paragraphs to "Indie Flower" */
 }
 
 img {
@@ -39,10 +44,10 @@ img {
 }
 
 .butn {
-    background: #4ecca3; /* Set the background color of the button class to #4ecca3 */
+    background: #fcf6f6; /* Set the background color of the button class to #4ecca3 */
     font-family: "Indie Flower", cursive; /* Set the font family of the button class to "Indie Flower" */
     border-radius: 7px; /* Add a border radius of 7px to the button class */
-    color: #ffff; /* Set the text color of the button class to white */
+    color: #000000; /* Set the text color of the button class to white */
     font-size: 30px; /* Set the font size of the button class to 30px */
     padding: 16px 25px 16px 25px; /* Add padding to the button class (top, right, bottom, left) */
     text-decoration: none; /* Remove the underline from the button class */
@@ -51,4 +56,10 @@ img {
 .butn:hover {
     background: #232931; /* Set the background color of the button class on hover to #232931 */
     text-decoration: none; /* Remove the underline from the button class on hover */
+}
+
+footer{
+    text-align:center;
+    color: #ffffff;
+    font-family:Indie Flower;
 }
