@@ -1,3 +1,15 @@
+span {
+    opacity: 0;
+    trasition: all 1s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 .container {
     background:linear-gradient(to left,#270b0b, #1e242f);
     width: 60%; /* Set the width of the container to 70% of its parent element */
