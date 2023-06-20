@@ -55,7 +55,7 @@ img {
 }
 
 .butn:hover {
-    background: #ffffff; /* Set the background color of the button class on hover to #232931 */
+    background: #232931; /* Set the background color of the button class on hover to #232931 */
     text-decoration: none; /* Remove the underline from the button class on hover */
 }
 
