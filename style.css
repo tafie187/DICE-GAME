@@ -37,6 +37,7 @@ body {
 h1 {
     margin: 30px; /* Add a 30px margin around the heading element */
     font-family:lobster ; /* Set the font family of the heading element to "Lobster" */
+    color: aqua; /* Color of the text */
     text-shadow: 5px 0 #232931; /* Add a text shadow to the heading element */
     font-size: 4.5rem; /* Set the font size of the heading element to 4.5rem */
     color:#fcf6f6; /* Set the text color of the heading element to #4ecca3 */
