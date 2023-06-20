@@ -1,6 +1,6 @@
 span {
     opacity: 0;
-    trasition: all 1s ease;
+    transition: all 1s ease;
     transform: translateY(50px);
     display: inline-block;
 }
@@ -11,7 +11,7 @@ span.fade {
 }
 
 .container {
-    background:linear-gradient(to left,#270b0b, #1e242f);
+    background:linear-gradient(to left,#725353, #7a8393);
     width: 60%; /* Set the width of the container to 70% of its parent element */
     margin: auto; /* Center the container horizontally */
     text-align: center; /* Center the content inside the container */
