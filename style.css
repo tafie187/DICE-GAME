@@ -1,5 +1,18 @@
+/* Animation config in CSS for tranformation */
+span {
+    opacity: 0;
+    transition: all 1s ease;
+    transform: translateY(50px);
+    display: inline-block;
+}
+
+span.fade {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 .container {
-    background:linear-gradient(to left,#270b0b, #1e242f);
+    background:linear-gradient(to left,#725353, #7a8393);
     width: 60%; /* Set the width of the container to 70% of its parent element */
     margin: auto; /* Center the container horizontally */
     text-align: center; /* Center the content inside the container */
@@ -24,6 +37,7 @@ body {
 h1 {
     margin: 30px; /* Add a 30px margin around the heading element */
     font-family:lobster ; /* Set the font family of the heading element to "Lobster" */
+    color: aqua; /* Color of the text */
     text-shadow: 5px 0 #232931; /* Add a text shadow to the heading element */
     font-size: 4.5rem; /* Set the font size of the heading element to 4.5rem */
     color:#fcf6f6; /* Set the text color of the heading element to #4ecca3 */

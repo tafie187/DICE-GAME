@@ -1,3 +1,67 @@
+// Get the element with the class "fancy"
+const text = document.querySelector(".fancy");
+
+// Get the text content of the element
+const strText = text.textContent;
+
+// Split the text into an array of characters
+const splitText = strText.split("");
+
+// Clear the original text content
+text.textContent = "";
+
+// Iterate over each character in the splitText array
+for (let i = 0; i < splitText.length; i++) {
+  // Create a new span element for each character and append it to the text element
+  text.innerHTML += "<span>" + splitText[i] + "</span>";
+}
+
+// Initialize variables for tracking the animation
+let char = 0;
+let timer = setInterval(onTick, 350);
+
+// Function that is called at intervals to animate each character
+function onTick() {
+  // Get the span element at the current character index
+  const span = text.querySelectorAll('span')[char];
+
+  // Add the 'fade' class to the span element, which applies a fading animation
+  span.classList.add('fade');
+
+  // Move to the next character
+  char++;
+
+  // Check if the animation is complete (reached the end of the text)
+  if (char === splitText.length) {
+    complete();
+    return;
+  }
+
+  // Reset the animation to the beginning once it reaches the end
+  if (char === splitText.length + 1) {
+    char = 0;
+    resetAnimation();
+  }
+}
+
+// Function called when the animation is complete
+function complete() {
+  // Clear the interval timer
+  clearInterval(timer);
+  timer = null;
+}
+
+// Function to reset the animation by removing the 'fade' class from all spans
+function resetAnimation() {
+  // Get all span elements
+  const spans = text.querySelectorAll('span');
+  
+  // Remove the 'fade' class from each span element
+  spans.forEach((span) => {
+    span.classList.remove('fade');
+  });
+}
+
 // Player name
 let player1 = "Player 1";
 let player2 = "Player 2";
