@@ -1,4 +1,3 @@
-//Animation
 const text = document.querySelector(".fancy");
 const strText = text.textContent;
 const splitText = strText.split("");
@@ -6,26 +5,43 @@ const splitText = strText.split("");
 text.textContent = "";
 
 for (let i = 0; i < splitText.length; i++) {
-    text.innerHTML += "<span>" + splitText[i] + "<span>";
+  text.innerHTML += "<span>" + splitText[i] + "</span>";
 }
 
 let char = 0;
-let timer = setInterval(onTick, 50);
+let timer = setInterval(onTick, 350);
 
 function onTick() {
-    const span = text.querySelectorAll('span')[char];
-    span.classList.add('fade');
-    char++;
-    if (char === splitText.length) {
-        complete();
-        return;
-    }
+  const span = text.querySelectorAll('span')[char];
+  span.classList.add('fade');
+  char++;
+
+  if (char === splitText.length) {
+    complete();
+    return;
+  }
+
+  // Reset the animation to the beginning once it reaches the end
+  if (char === splitText.length + 1) {
+    char = 0;
+    resetAnimation();
+  }
 }
 
 function complete() {
-    clearInterval(timer);
-    time = null;
+  clearInterval(timer);
+  timer = null;
 }
+
+// Function to reset the animation by removing the 'fade' class from all spans
+function resetAnimation() {
+  const spans = text.querySelectorAll('span');
+  spans.forEach((span) => {
+    span.classList.remove('fade');
+  });
+}
+
+
 
 // Player name
 let player1 = "Player 1";
