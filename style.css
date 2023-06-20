@@ -60,7 +60,7 @@ img {
 }
 
 footer{
-    text-align:center;
-    color: #ffffff;
-    font-family:'Indie Flower', cursive;
+    text-align:center;/*Align footer to center*/
+    color: #ffffff;/*Set Text Color to white*/
+    font-family:'Indie Flower', cursive;/*Set font family of footer to Indie Flower*/
 }
